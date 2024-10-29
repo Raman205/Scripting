@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // windows.onload = function(){
+
+    // }
+    function display(){
+        document.getElementById('name_error').innerText="";
+        let a= document.getElementById('name').value;
+        // document.write(a);
+        console.log(a);
+        // window .alert(a);
+        var pattern= /^[a-z A-Z]+$/;
+        if(!a.match(pattern)){
+            document.getElementById('name_error').innerText="Please Provide Valid Name.";
+            console.log(a);
+        }else{
+            document.getElementById('name_error').innerText=a;
+        }
+    // var text = 'Ram'
+    // pattern.test(text);
+    // var text="1";
+    // pattern.test
+    }
+   
+    </script>
+    Name:
+    <input type="text" name="name" id="name"><span style="color:red" id="name_error"></span>
+    <button onclick="display()">click</button>
+</body>
+</html>

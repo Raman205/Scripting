@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        window.onload=(function(){
+            //select paragraph with class changeContent
+            var pk = document.getElementsByClassName('changeKura')[0];
+            console.log(pk.innerText);
+            //change innertext of paragraph
+            pk.innerText = "Naya Kura";
+            console.log(pk.innerText);
+
+            pk.innerHTML = "<h1>Naya Kura</h1>";
+            console.log(pk.innerHTML);
+        });
+        
+    </script> -->
+
+    <script>
+        //selecting by p tag
+        window.onload=(function(){
+            //select paragraph with p tag changeContent
+            var pk = document.getElementsByTagName('p')[0];
+            console.log(pk.innerText);
+            //change innertext of paragraph
+            pk.innerText = "Naya Kura";
+            console.log(pk.innerText);
+
+            pk.innerHTML = "<h1>Naya Kura</h1>";
+            console.log(pk.innerHTML);
+        });
+        
+    </script>
+</head>
+<body>
+    <p class="changeKura">purano kura</p>
+    <p class="changeKura">purano kura feri</p>
+
+    <!-- <script>
+        //select paragraph with Id changeContent
+        var pk = document.getElementById('changeKura');
+        console.log(pk.innerText);
+        //change innertext of paragraph
+        pk.innerText="Naya Kura";
+        console.log(pk.innerText);
+    </script> -->
+</body>
+</html>

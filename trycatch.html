@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var age=16;
+        // try{
+        //     console.log("this is try block");
+        // }catch(err){
+        //     console.log("error occured");
+        //     console.log(err.message);
+        // }
+        try{
+            // throw 42;
+            // throw "some erorr occured";
+            if (age<18){
+            throw new Error ("Age must be = or >18");
+            }
+            console.log(ABC);
+        }catch(err){
+            console.log("error occured");
+            console.log(err);
+        } -->
+    <!-- </script> -->
+     <h1>Welcome </h1>
+     <button onclick="changeText()"> Change Text</button>
+     <button onclick="changeColor()"> Change Text Color</button>
+     <script>
+        function changeText(){
+            var text= document.getElementsByTagName('h1')[0];
+            text.innerText=text.innerText+" to HDC."
+        }
+        function changeColor(){
+            var text= document.getElementsByTagName('h1')[0];
+            text.style.color="blue"
+        }
+     </script>
+
+</body>
+</html>

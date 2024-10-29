@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="blinkText"> This is a random text which will blink on every two seconds </p>
+    <script>
+        let blinkText = document.getElementById('blinkText');
+        setInterval(function(){
+           if( blinkText.style.display === 'block'){
+            blinkText.style.display = 'none';
+           }else{
+            blinkText.style.display = 'block';
+           }
+        },2000);
+
+    </script>
+</body>
+</html>
